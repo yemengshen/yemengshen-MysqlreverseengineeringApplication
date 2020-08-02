@@ -33,8 +33,8 @@ public class Schedueld {
      * ●井号(#)：该字符只能在星期字段中使用，表示当月某个工作日。如 6#3 表示当月的第三个星期五(6表示星期五，#3 表示当前的第三个)，而 4#5 表示当月的第五个星期三，假设当月没有第五个星期三，忽略不触发；
      * ● C：该字符只在日期和星期字段中使用，代表“Calendar”的意思。它的意思是计划所关联的日期，如果日期没有被关联，则相当于日历中所有日期。例如 5C 在日期字段中就相当于日历 5 日以后的第一天。1C 在星期字段中相当于星期日后的第一天。
      */
-    @Scheduled(cron = "0/2 * * * *  ?")
-    public void doSome(){
-        System.out.println("定时任务执行了:"+new Date().getTime());
-    }
+//    @Scheduled(cron = "0/2 * * * *  ?")
+//    public void doSome(){
+//        System.out.println("定时任务执行了:"+new Date().getTime());
+//    }
 }
